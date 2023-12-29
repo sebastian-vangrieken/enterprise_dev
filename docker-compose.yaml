@@ -1,1 +1,74 @@
-#hwelgjmwopeg
+services:
+  mongo-tournament:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    volumes:
+      - mongodb_tournament_data:/data/db
+
+  mysql-player:
+    image: mysql:latest
+    ports:
+      - 1111:3306
+    volumes:
+      - mysql_player_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+
+  mysql-club:
+    image: mysql:latest
+    ports:
+      - 2222:3306
+    volumes:
+      - mysql_club_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: 12345
+
+  tournament-service:
+    depends_on:
+      - mongo-tournament
+    image: sebastianvg153/tournament-service
+    ports:
+      - 8080:8080
+    links:
+      - mongo-tournament
+    environment:
+      MONGO_HOST: mongo-tournaments
+      MONGO_PORT: 27017
+
+  club-service:
+    depends_on:
+      - mysql-club
+    image: sebastianvg153/club-service
+    ports:
+      - 8082:8082
+    links:
+      - mysql-club
+    environment:
+      MYSQL_HOST: mysql-club
+      MYSQL_PORT: 2222
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 12345
+
+  player-service:
+    depends_on:
+      - club-service
+      - tournament-service
+    image: sebastianvg153/player-service
+    ports:
+      - 8081:8081
+    links:
+      - club-service
+      - tournament-service
+    environment:
+      TOURNAMENT_SERVICE_BASEURL: tournament-service:8080
+      CLUB_SERVICE_BASEURL: club-service:8082
+      MYSQL_HOST: mysql-player
+      MYSQL_PORT: 1111
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 12345
+
+volumes:
+  mongodb_tournament_data:
+  mysql_player_data:
+  mysql_club_data:
