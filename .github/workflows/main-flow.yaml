@@ -18,7 +18,7 @@ jobs:
           distribution: adopt
       
       - name: Build, test and package project
-        working-directory: ./tournament-service
+        working-directory: ./Tournament-service
         run: mvn package -B
 
       - name: Docker login
@@ -45,7 +45,7 @@ jobs:
           distribution: adopt
       
       - name: Build, test and package project
-        working-directory: ./club-service
+        working-directory: ./Club-service
         run: mvn package -B
       
       - name: Docker login
@@ -72,7 +72,7 @@ jobs:
           distribution: adopt
 
       - name: Build, test and package project
-        working-directory: ./player-service
+        working-directory: ./Player-service
         run: mvn package -B
 
       - name: Docker login
