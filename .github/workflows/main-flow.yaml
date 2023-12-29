@@ -25,7 +25,7 @@ jobs:
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
       
       - name: Docker Build
-        run: docker build -t ${{ secrets.DOCKER_USER }}/tournament-service:latest ./tournament-service
+        run: docker build -t ${{ secrets.DOCKER_USER }}/tournament-service:latest ./Tournament-service
 
       - name: Upload container to Docker Hub with push
         run: docker push ${{ secrets.DOCKER_USER }}/tournament-service:latest
@@ -52,7 +52,7 @@ jobs:
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Docker Build
-        run: docker build -t ${{ secrets.DOCKER_USER }}/club-service:latest ./club-service
+        run: docker build -t ${{ secrets.DOCKER_USER }}/club-service:latest ./Club-service
 
       - name: Upload container to Docker Hub with push
         run: docker push ${{ secrets.DOCKER_USER }}/club-service:latest
@@ -79,7 +79,7 @@ jobs:
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Docker Build
-        run: docker build -t ${{ secrets.DOCKER_USER }}/player-service:latest ./player-service
+        run: docker build -t ${{ secrets.DOCKER_USER }}/player-service:latest ./Player-service
 
       - name: Upload container to Docker Hub with push
         run: docker push ${{ secrets.DOCKER_USER }}/player-service:latest
