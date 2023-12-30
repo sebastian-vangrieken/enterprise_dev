@@ -53,8 +53,6 @@ services:
   player-service:
     depends_on:
       - mysql-player
-      - club-service
-      - tournament-service
     image: sebastianvg153/player-service
     ports:
       - 8081:8081
