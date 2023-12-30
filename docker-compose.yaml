@@ -45,10 +45,10 @@ services:
     links:
       - mysql-club
     environment:
-      MYSQL_HOST: mysql-club
-      MYSQL_PORT: 2222
-      MYSQL_USER: root
-      MYSQL_PASSWORD: 12345
+      MYSQL_DB_HOST: mysql-club
+      MYSQL_DB_PORT: 2222
+      MYSQL_DB_USER: root
+      MYSQL_DB_PASSWORD: 12345
 
   player-service:
     depends_on:
@@ -61,10 +61,10 @@ services:
     environment:
       TOURNAMENT_SERVICE_BASEURL: tournament-service:8080
       CLUB_SERVICE_BASEURL: club-service:8082
-      MYSQL_HOST: mysql-player
-      MYSQL_PORT: 1111
-      MYSQL_USER: root
-      MYSQL_PASSWORD: 12345
+      MYSQL_DB_HOST: mysql-player
+      MYSQL_DB_PORT: 1111
+      MYSQL_DB_USER: root
+      MYSQL_DB_PASSWORD: 12345
 
 volumes:
   mongodb_tournament_data:
