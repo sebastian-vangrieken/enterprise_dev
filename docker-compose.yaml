@@ -33,7 +33,7 @@ services:
     links:
       - mongo-tournament
     environment:
-      MONGODB_HOST: mongo-tournaments
+      MONGODB_HOST: mongo-tournament
       MONGODB_PORT: 27017
 
   club-service:
