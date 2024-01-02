@@ -1,32 +1,32 @@
 server:
-  port: 8083
+    port: 8083
 
 logging:
-  level:
-    root: INFO
-    org.springframework.cloud.gateway: TRACE
-    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: INFO
-    reactor.netty: TRACE
+    level:
+        root: INFO
+        org.springframework.cloud.gateway: TRACE
+        org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: INFO
+        reactor.netty: TRACE
 
 spring:
-  cloud:
-    gateway:
-      routes:
-        - id: player-service
-          uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
-          predicates:
-            - Path=/player
-          filters:
-            - SetPath=/api/player
-        - id: club-service
-          uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
-          predicates:
-            - Path=/club
-          filters:
-            - SetPath=/api/club
-        - id: tournament-service
-          uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
-          predicates:
-            - Path=/tournament
-          filters:
-            - SetPath=/api/tournament
+    cloud:
+        gateway:
+            routes:
+                - id: player-service
+                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
+                  predicates:
+                      - Path=/player
+                  filters:
+                      - SetPath=/api/player
+                - id: club-service
+                  uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
+                  predicates:
+                      - Path=/club
+                  filters:
+                      - SetPath=/api/club
+                - id: tournament-service
+                  uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
+                  predicates:
+                      - Path=/tournament
+                  filters:
+                      - SetPath=/api/tournament
