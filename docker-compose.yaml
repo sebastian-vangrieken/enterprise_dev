@@ -66,6 +66,23 @@ services:
       MYSQL_DB_USER: root
       MYSQL_DB_PASSWORD: 12345
 
+  api-gateway:
+    depends_on:
+      - tournament-service
+      - club-service
+      - player-service
+    image: sebastianvg153/api-gateway
+    ports:
+      - 8083:8083
+    links:
+      - tournament-service
+      - club-service
+      - player-service
+    environment:
+      TOURNAMENT_SERVICE_BASEURL: tournament-service:8080
+      CLUB_SERVICE_BASEURL: club-service:8082
+      PLAYER_SERVICE_BASEURL: player-service:8081
+
 volumes:
   mongodb_tournament_data:
   mysql_player_data:
