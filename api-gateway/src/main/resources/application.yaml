@@ -12,20 +12,6 @@ spring:
     cloud:
         gateway:
             routes:
-                - id: player-get-all
-                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
-                  predicates:
-                      - Path=/player/get/all
-                      - Method=GET
-                  filters:
-                      - SetPath=/api/player/get/all
-                - id: player-get-id
-                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
-                  predicates:
-                      - Path=/player/get/{id}
-                      - Method=GET
-                  filters:
-                      - SetPath=/api/player/get/{id}
                 - id: player-post
                   uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
                   predicates:
@@ -33,17 +19,3 @@ spring:
                       - Method=POST
                   filters:
                       - SetPath=/api/player/post
-                - id: player-put-id
-                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
-                  predicates:
-                      - Path=/player/put/{id}
-                      - Method=GET,PUT,DELETE
-                  filters:
-                      - SetPath=/api/player/put/{id}
-                - id: player-delete-id
-                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
-                  predicates:
-                    - Path=/player/delete/{id}
-                    - Method=GET,DELETE
-                  filters:
-                    - SetPath=/api/player/delete/{id}
