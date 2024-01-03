@@ -12,6 +12,13 @@ spring:
     cloud:
         gateway:
             routes:
+                - id: player-get-all
+                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
+                  predicates:
+                      - Path=/player/get/all
+                      - Method=GET
+                  filters:
+                      - SetPath=/api/player/get/all
                 - id: player-post
                   uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
                   predicates:
@@ -19,3 +26,95 @@ spring:
                       - Method=POST
                   filters:
                       - SetPath=/api/player/post
+                - id: player-get-id
+                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
+                  predicates:
+                      - Path=/player/get/{id}
+                      - Method=GET
+                  filters:
+                      - SetPath=/api/player/get/{id}
+                - id: player-put-id
+                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
+                  predicates:
+                        - Path=/player/put/{id}
+                        - Method=GET,PUT,DELETE
+                  filters:
+                        - SetPath=/api/player/put/{id}
+                - id: player-delete-id
+                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
+                  predicates:
+                        - Path=/player/delete/{id}
+                        - Method=GET,DELETE
+                  filters:
+                        - SetPath=/api/player/delete/{id}
+                - id: club-service
+                  uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
+                  predicates:
+                        - Path=/club/get/all
+                        - Method=GET
+                  filters:
+                        - SetPath=/api/club/get/all
+                - id: club-service
+                  uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
+                  predicates:
+                        - Path=/club/get/{id}
+                        - Method=GET
+                  filters:
+                        - SetPath=/api/club/get/{id}
+                - id: club-service
+                  uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
+                  predicates:
+                        - Path=/club/post
+                        - Method=POST
+                  filters:
+                        - SetPath=/api/club/post
+                - id: club-service
+                  uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
+                  predicates:
+                        - Path=/club/put/{id}
+                        - Method=GET,PUT,DELETE
+                  filters:
+                        - SetPath=/api/club/put/{id}
+                - id: club-service
+                  uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
+                  predicates:
+                        - Path=/club/delete/{id}
+                        - Method=GET,DELETE
+                  filters:
+                        - SetPath=/api/club/get/all
+
+                - id: tournament-service
+                  uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
+                  predicates:
+                        - Path=/tournament/get/all
+                        - Method=GET
+                  filters:
+                        - SetPath=/api/tournament/get/all
+                - id: tournament-service
+                  uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
+                  predicates:
+                        - Path=/tournament/get/{id}
+                        - Method=GET
+                  filters:
+                        - SetPath=/api/tournament/get/{id}
+                - id: tournament-service
+                  uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
+                  predicates:
+                        - Path=/tournament/post
+                        - Method=POST
+                  filters:
+                        - SetPath=/api/tournament/post
+                - id: tournament-service
+                  uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
+                  predicates:
+                        - Path=/tournament/put/{id}
+                        - Method=GET,PUT,DELETE
+                  filters:
+                        - SetPath=/api/tournament/put/{id}
+                - id: tournament-service
+                  uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
+                  predicates:
+                        - Path=/tournament/delete/{id}
+                        - Method=GET,DELETE
+                  filters:
+                        - SetPath=/api/tournament/delete/{id}
