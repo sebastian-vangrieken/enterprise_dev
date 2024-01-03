@@ -17,16 +17,16 @@ spring:
                   predicates:
                       - Path=/player
                   filters:
-                      - SetPath=/api/player
+                      - SetPath=/api/player/**
                 - id: club-service
                   uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
                   predicates:
                       - Path=/club
                   filters:
-                      - SetPath=/api/club
+                      - SetPath=/api/club/**
                 - id: tournament-service
                   uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
                   predicates:
                       - Path=/tournament
                   filters:
-                      - SetPath=/api/tournament
+                      - SetPath=/api/tournament/**

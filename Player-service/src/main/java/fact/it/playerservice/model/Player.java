@@ -10,7 +10,7 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Player {
+public class  Player {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
