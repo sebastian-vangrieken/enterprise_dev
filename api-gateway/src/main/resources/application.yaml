@@ -26,3 +26,24 @@ spring:
                       - Method=GET
                   filters:
                       - SetPath=/api/player/get/{id}
+                - id: player-service
+                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
+                  predicates:
+                      - Path=/player/post
+                      - Method=POST
+                  filters:
+                      - SetPath=/api/player/post
+                - id: player-service
+                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
+                  predicates:
+                      - Path=/player/put/{id}
+                      - Method=GET,PUT,DELETE
+                  filters:
+                      - SetPath=/api/player/put/{id}
+                - id: player-service
+                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
+                  predicates:
+                    - Path=/player/delete/{id}
+                    - Method=GET,DELETE
+                  filters:
+                    - SetPath=/api/player/delete/{id}
