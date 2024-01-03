@@ -19,3 +19,10 @@ spring:
                       - Method=GET
                   filters:
                       - SetPath=/api/player/get/all
+                - id: player-service
+                  uri: http://${PLAYER_SERVICE_BASEURL:localhost:8081}
+                  predicates:
+                      - Path=/player/get/{id}
+                      - Method=GET
+                  filters:
+                      - SetPath=/api/player/get/{id}
