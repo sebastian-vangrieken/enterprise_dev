@@ -16,13 +16,13 @@ public class SecurityConfig {
     public SecurityWebFilterChain springSecurityWebFilterChain(ServerHttpSecurity serverHttpSecurity) {
         serverHttpSecurity
                 .authorizeExchange(exchange ->
-                        exchange.pathMatchers(HttpMethod.GET, "/player")
+                        exchange.pathMatchers(HttpMethod.GET, "/player/get/all", "/player/get/{id}",
+                                        "/club/get/all", "/club/get/{id}", "/tournament/get/all", "/tournament/get/{id}")
                                 .permitAll()
                                 .anyExchange()
                                 .authenticated()
                 )
-                .oauth2ResourceServer(oauth2 -> oauth2
-                        .jwt(withDefaults())
+                .oauth2ResourceServer(oauth2 -> oauth2.jwt(withDefaults())
                 );
         return serverHttpSecurity.build();
     }
