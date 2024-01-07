@@ -1,6 +1,6 @@
 # Enterprise Development
 
-This repository is a project for my enterprise development course. The goal of this porject is to create a java api consisting of a minimum of 3 microservices, this api has an api-gateway to be able to use authentication and loadbalance, next the api is deployed on okteto using Docker containers, finally unit test will be implemented to test the api before deployement to prevent deployment hell. Extra credit can be gained by doing extra tasks such as creating a frontend, changing the docker-compose to a kubernetes manifest and more. The frontend I create for my extra credit can be found here https://enterprise-dev-frontend.vercel.app/ .
+This repository is a project for my enterprise development course. The goal of this porject is to create a java api consisting of a minimum of 3 microservices, this api has an api-gateway to be able to use authentication and loadbalance, next the api is deployed on okteto using Docker containers, finally unit test will be implemented to test the api before deployement to prevent deployment hell. Extra credit can be gained by doing extra tasks such as creating a frontend, changing the docker-compose to a kubernetes manifest and more. The frontend I create for my extra credit can be found here https://enterprise-dev-frontend.vercel.app/ . A layout of the entire project can be seen at the bottom of this README.
 
 ## 1. Microservices
 
