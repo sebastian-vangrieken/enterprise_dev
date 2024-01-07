@@ -60,35 +60,35 @@ spring:
                   filters:
                         - SetPath=/api/player/delete/{id}
 
-                - id: club-service
+                - id: club-get-all
                   uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
                   predicates:
                         - Path=/club/get/all
                         - Method=GET
                   filters:
                         - SetPath=/api/club/get/all
-                - id: club-service
+                - id: club-get-id
                   uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
                   predicates:
                         - Path=/club/get/{id}
                         - Method=GET
                   filters:
                         - SetPath=/api/club/get/{id}
-                - id: club-service
+                - id: club-post
                   uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
                   predicates:
                         - Path=/club/post
                         - Method=POST
                   filters:
                         - SetPath=/api/club/post
-                - id: club-service
+                - id: club-put-id
                   uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
                   predicates:
                         - Path=/club/put/{id}
                         - Method=GET,PUT,DELETE
                   filters:
                         - SetPath=/api/club/put/{id}
-                - id: club-service
+                - id: club-delete-id
                   uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
                   predicates:
                         - Path=/club/delete/{id}
@@ -96,35 +96,35 @@ spring:
                   filters:
                         - SetPath=/api/club/delete/{id}
 
-                - id: tournament-service
+                - id: tournament-get-all
                   uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
                   predicates:
                         - Path=/tournament/get/all
                         - Method=GET
                   filters:
                         - SetPath=/api/tournament/get/all
-                - id: tournament-service
+                - id: tournament-get-id
                   uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
                   predicates:
                         - Path=/tournament/get/{id}
                         - Method=GET
                   filters:
                         - SetPath=/api/tournament/get/{id}
-                - id: tournament-service
+                - id: tournament-post
                   uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
                   predicates:
                         - Path=/tournament/post
                         - Method=POST
                   filters:
                         - SetPath=/api/tournament/post
-                - id: tournament-service
+                - id: tournament-put-id
                   uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
                   predicates:
                         - Path=/tournament/put/{id}
                         - Method=GET,PUT,DELETE
                   filters:
                         - SetPath=/api/tournament/put/{id}
-                - id: tournament-service
+                - id: tournament-delete-id
                   uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
                   predicates:
                         - Path=/tournament/delete/{id}
