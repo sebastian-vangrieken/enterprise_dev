@@ -33,7 +33,7 @@ In this final part of the project we implement unit tests. These are usefull for
 * [frontend hosted on vercel](https://enterprise-dev-frontend.vercel.app/)
 
 ## Endpoints
-* player-service
+### player-service
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/712a21af-3ea9-4cb0-83b8-d2da74a34b16)
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/15c4e335-2d81-4978-9c5d-4dfa5f98cbf7)
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/cba2948a-6d16-40e4-808b-9cc3ede9f72f)
@@ -42,5 +42,5 @@ In this final part of the project we implement unit tests. These are usefull for
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/1b75b92a-9364-4ccb-a584-d89030557516)
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/bc2ef15c-45c5-48da-8657-275eb04589f7)
 
-* club-service
+### club-service
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/a6d51774-2239-4cf7-8fe1-a477428fff0f)
