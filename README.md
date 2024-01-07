@@ -36,4 +36,8 @@ In this final part of the project we implement unit tests. These are usefull for
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/712a21af-3ea9-4cb0-83b8-d2da74a34b16)
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/15c4e335-2d81-4978-9c5d-4dfa5f98cbf7)
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/cba2948a-6d16-40e4-808b-9cc3ede9f72f)
+![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/eaa2e6f0-212b-4c78-9697-e2ab2d80eb68)
+![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/47ffcdc9-a52f-4c9b-a6fc-1752b489c15d)
+![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/1b75b92a-9364-4ccb-a584-d89030557516)
+![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/bc2ef15c-45c5-48da-8657-275eb04589f7)
 
