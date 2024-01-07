@@ -59,6 +59,7 @@ spring:
                         - Method=GET,DELETE
                   filters:
                         - SetPath=/api/player/delete/{id}
+
                 - id: club-service
                   uri: http://${CLUB_SERVICE_BASEURL:localhost:8082}
                   predicates:
@@ -93,7 +94,7 @@ spring:
                         - Path=/club/delete/{id}
                         - Method=GET,DELETE
                   filters:
-                        - SetPath=/api/club/get/all
+                        - SetPath=/api/club/delete/{id}
 
                 - id: tournament-service
                   uri: http://${TOURNAMENT_SERVICE_BASEURL:localhost:8080}
