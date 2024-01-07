@@ -34,3 +34,6 @@ In this final part of the project we implement unit tests. These are usefull for
 
 ## Endpoints
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/712a21af-3ea9-4cb0-83b8-d2da74a34b16)
+![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/15c4e335-2d81-4978-9c5d-4dfa5f98cbf7)
+![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/cba2948a-6d16-40e4-808b-9cc3ede9f72f)
+
