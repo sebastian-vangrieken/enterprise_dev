@@ -45,3 +45,7 @@ In this final part of the project we implement unit tests. These are usefull for
 ### club-service
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/a6d51774-2239-4cf7-8fe1-a477428fff0f)
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/b98ae869-25b3-43ab-9605-0b4fda033a93)
+![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/e1ee3426-8b29-4303-92f5-8ef26fc916ed)
+![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/eadc9165-a799-477f-84b8-911abf236854)
+![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/bc677895-31c9-43f0-a69b-6160fb0a91b8)
+
