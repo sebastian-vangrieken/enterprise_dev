@@ -12,5 +12,15 @@ The second part of the project is deployment. In this step we make use of Docker
 
 ## 3. API gateway
 
-The third part of the project consists of create an api-gateway for the 3 api microservices.
+The third part of the project consists of create an api-gateway for the 3 api microservices. The api-gateway allows for the 3 api microservices to be searchable from 1 central place, it also allows for loadbalancing not that loadbalencing will be neccassary for my api, it also allows for the use of authentication which allows me to block access to surtain endpoints depending on who is accessing them. When the gateway is written it can then also be containerized by actions, put in the docker-compose file and then hosted on okteto.
+
+## 4. Authentication
+
+The fourth part of the project is authentication. In this part I use the google cloud platform to put authentication on the api-gateway. Certain endpoints can be blocked depending on the bearer token the user has. For example, all GET endpoints can be allowed to be accessed by every user, but endpoints POST, PUT & DELETE endpoints should be authenticated so that not everyone can change data.
+
+## 5. Unit testing
+
+In this final part of the project we implement unit tests. These are usefull for preventing bugs from going into production and breaking users applications. The unit tests are pieces of code which act like a user and then check if the outcome of a certain event is the same as what the outcome should really be. When tests fail a developer can change their code to fix the problem and this can also lead to more efficient and saffer code in certain cases.
+
+### Project layout
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/57309763-0d1e-41ce-b3a6-ea34ebeee3f7)
