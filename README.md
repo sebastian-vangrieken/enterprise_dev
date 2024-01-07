@@ -31,3 +31,5 @@ In this final part of the project we implement unit tests. These are usefull for
 * [club-service](https://club-service-sebastian-vangrieken.cloud.okteto.net/)
 * [player-service](https://player-service-sebastian-vangrieken.cloud.okteto.net/)
 * [frontend hosted on vercel](https://enterprise-dev-frontend.vercel.app/)
+
+## Endpoints
