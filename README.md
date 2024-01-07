@@ -48,4 +48,5 @@ In this final part of the project we implement unit tests. These are usefull for
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/e1ee3426-8b29-4303-92f5-8ef26fc916ed)
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/eadc9165-a799-477f-84b8-911abf236854)
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/bc677895-31c9-43f0-a69b-6160fb0a91b8)
+![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/5810271c-48e1-463b-9ff0-a75f6f20eb9e)
 
