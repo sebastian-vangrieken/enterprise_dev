@@ -26,3 +26,7 @@ In this final part of the project we implement unit tests. These are usefull for
 ![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/57309763-0d1e-41ce-b3a6-ea34ebeee3f7)
 
 ## Hosting
+*api-gateway: https://api-gateway-sebastian-vangrieken.cloud.okteto.net/
+*tournament-service: https://tournament-service-sebastian-vangrieken.cloud.okteto.net/
+*club-service: https://club-service-sebastian-vangrieken.cloud.okteto.net/
+*player-service: https://player-service-sebastian-vangrieken.cloud.okteto.net/
