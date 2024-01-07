@@ -33,3 +33,4 @@ In this final part of the project we implement unit tests. These are usefull for
 * [frontend hosted on vercel](https://enterprise-dev-frontend.vercel.app/)
 
 ## Endpoints
+![image](https://github.com/sebastian-vangrieken/enterprise_dev/assets/91123328/712a21af-3ea9-4cb0-83b8-d2da74a34b16)
